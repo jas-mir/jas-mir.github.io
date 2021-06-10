@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=Almendra+SC&display=swap" rel="stylesheet">
+    <style>
+    html {background-color: white;}
+    p {
+        font-family: 'Almendra SC', 'Viaoda Libre'; 
+        font-size: 70px; 
+        color:mediumpurple; 
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    </style>
+    </head>
+    <body>
+        <p>
+            <span id="week"></span>
+        </p>
+
+            <script>
+            var d = new Date();
+            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById("week").innerHTML = weekday[d.getDay()];
+            </script>
+        
+        
+
+    </body>
+</html>
